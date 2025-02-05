@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Button } from '@mui/material';
 import analysisImage from '../assets/aboutsection-student.png'; // Replace with your image path
 
 const AboutSection = () => {
@@ -20,7 +20,7 @@ const AboutSection = () => {
         textAlign: 'center',
       }}
     >
-      
+      {/* Left Text Content */}
       <Box
         flex={{ xs: 1, md: 0.6 }}
         sx={{
@@ -47,7 +47,7 @@ const AboutSection = () => {
           sx={{
             color: '#555',
             mb: 5,
-            fontSize: '1.5rem', 
+            fontSize: '1.5rem',
             lineHeight: 1.8,
           }}
         >
@@ -57,7 +57,7 @@ const AboutSection = () => {
         <Box display="flex" justifyContent={{ xs: 'center', md: 'flex-start' }} gap={8}>
           <Box textAlign="center">
             <Typography
-              variant="h4" 
+              variant="h4"
               sx={{
                 fontWeight: 'bold',
                 color: '#2E3A59',
@@ -92,6 +92,28 @@ const AboutSection = () => {
             </Typography>
           </Box>
         </Box>
+        <Box sx={{ mt: 4, display: 'flex', justifyContent: { xs: 'center', md: 'flex-start' } }}>
+          <Button
+            variant="contained"
+            href="/baseball-ai"
+            sx={{
+              width: { xs: '60%', md: '20%' }, // Responsive button width
+              backgroundColor: '#BA0C2F', // Red button color
+              fontSize: '1rem',
+              fontWeight: 'bold',
+              borderRadius: '5%',
+              fontFamily: "'Roboto', sans-serif",
+              color: '#FFFFFF',
+              textTransform: 'uppercase',
+              padding: '0.5rem 1.5rem',
+              '&:hover': {
+                backgroundColor: '#A11222', // Darker red hover effect
+              },
+            }}
+          >
+            Try SlugSei
+          </Button>
+        </Box>
       </Box>
 
       {/* Right Image Content */}
@@ -101,7 +123,7 @@ const AboutSection = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          pr: { xs: 0, md: 9 }, 
+          pr: { xs: 0, md: 9 },
         }}
       >
         <img

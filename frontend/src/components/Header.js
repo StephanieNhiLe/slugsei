@@ -20,13 +20,13 @@ const Header = () => {
     <Box
       sx={{
         width: 250,
-        bgcolor: '#002D62', 
+        bgcolor: '#002D62', // MLB Blue background
         height: '100%',
-        color: 'white', 
+        color: 'white', // White text
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        pt: 4, 
+        pt: 4, // Padding from the top
       }}
       role="presentation"
       onClick={toggleDrawer(false)}
@@ -44,23 +44,27 @@ const Header = () => {
   );
 
   return (
-    <AppBar position="static" style={{ background: '#002D62' }}> {/* MLB Blue for the AppBar */}
+    <AppBar position="static" sx={{ backgroundColor: '#002D62', padding: '0.5rem 2rem' }}>
       <Toolbar>
+        {/* Logo/Brand Name */}
         <Typography
-          variant="h6"
+          variant="h5"
           sx={{
-            fontFamily: 'revert',
+            fontFamily: "'Roboto', sans-serif", // Modern font
+            fontWeight: 'bold',
+            fontSize: isMobile ? '1.5rem' : '1.8rem', // Responsive font size
+            color: '#FFFFFF',
             flexGrow: 1,
-            color: 'white', // White text for the brand name
-            textAlign: 'left',
-            pl: isMobile ? 1 : 15,
+            padding: '1rem'
           }}
         >
           <Link href="/" color="inherit" underline="none">
             SlugSei
           </Link>
         </Typography>
-        <Box sx={{ marginLeft: 'auto', pr: isMobile ? 1 : 15 }}>
+
+        {/* Navigation Links */}
+        <Box sx={{ marginLeft: 'auto' }}>
           {isMobile ? (
             <>
               <IconButton edge="start" color="inherit" aria-label="menu" onClick={toggleDrawer(true)}>
@@ -71,17 +75,19 @@ const Header = () => {
               </Drawer>
             </>
           ) : (
-            <>
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
               <Link
-                variant="h6"
                 href="/"
                 color="inherit"
                 underline="none"
                 sx={{
-                  fontFamily: 'revert',
-                  flexGrow: 1,
-                  pr: 5,
-                  color: 'white', 
+                  fontSize: '1.25rem', // Larger font size for links
+                  fontWeight: '500',
+                  fontFamily: "'Roboto', sans-serif",
+                  color: '#FFFFFF',
+                  '&:hover': {
+                    color: '#A11222', // Gold hover effect
+                  },
                 }}
               >
                 Home
@@ -89,17 +95,22 @@ const Header = () => {
               <Button
                 variant="contained"
                 href="/baseball-ai"
-                style={{
-                  fontFamily: 'revert',
-                  flexGrow: 1,
-                  pr: 5,
-                  backgroundColor: '#BA0C2F', 
-                  color: 'white', 
+                sx={{
+                  backgroundColor: '#BA0C2F', // Red button color
+                  fontSize: '1rem',
+                  fontWeight: 'bold',
+                  fontFamily: "'Roboto', sans-serif",
+                  color: '#FFFFFF',
+                  textTransform: 'uppercase',
+                  padding: '0.5rem 1.5rem',
+                  '&:hover': {
+                    backgroundColor: '#A11222', // Darker red hover effect
+                  },
                 }}
               >
                 Try SlugSei
               </Button>
-            </>
+            </Box>
           )}
         </Box>
       </Toolbar>

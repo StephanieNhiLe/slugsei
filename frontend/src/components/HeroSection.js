@@ -80,7 +80,7 @@ const HeroSection = () => {
           fontSize: isMobile ? '0.8em' : '1em',
           borderRadius: '3rem',
           '&:hover': {
-            backgroundColor: '#85B038',
+            backgroundColor: '#A11222',
             fontcolor: '#FFFFFF',
           },
           mt: 4,
