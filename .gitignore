@@ -37,4 +37,5 @@ dist-ssr
 temp_videos/
 ball_position.txt
 backend/tests/test_output
-
+ 
+key.json 
