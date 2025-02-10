@@ -22,8 +22,9 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          gcloud builds submit --tag gcr.io/${{ secrets.GCP_PROJECT_ID }}/slugseiai
+          gcloud builds submit --tag gcr.io/${{ secrets.GCP_PROJECT_ID }}/slugseiai ./backend
 
       - name: Deploy to Cloud Run
         run: |
-          gcloud run deploy your-app --image gcr.io/${{ secrets.GCP_PROJECT_ID }}/slugseiai --platform managed --allow-unauthenticated --region us-central1
+          gcloud run deploy slugseiai --image gcr.io/${{ secrets.GCP_PROJECT_ID }}/slugseiai --platform managed --allow-unauthenticated --region us-central1
+
