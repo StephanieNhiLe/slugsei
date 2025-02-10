@@ -27,4 +27,3 @@ jobs:
       - name: Deploy to Cloud Run
         run: |
           gcloud run deploy your-app --image gcr.io/${{ secrets.GCP_PROJECT_ID }}/slugseiai --platform managed --allow-unauthenticated --region us-central1
-
