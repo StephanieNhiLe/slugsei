@@ -1,5 +1,0 @@
-opencv-python
-pandas
-mediapipe
-moviepy
-requests
