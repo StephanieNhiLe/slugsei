@@ -53,6 +53,6 @@ We plan to expand Slugger Sensei’s capabilities by incorporating pitch recogni
 Slugger Sensei is just getting started—our goal is to revolutionize sports training with AI-powered coaching for everyone!
 
 Test it out here:
-https://virtual-baseball-coach-ui-159395849557.us-central1.run.app/baseball-ai
+https://virtual-baseball-coach-ui-159395849557.us-central1.run.app
 
 
