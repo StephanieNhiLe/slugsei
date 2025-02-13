@@ -51,3 +51,8 @@ This project reinforced the importance of efficient model deployment and optimiz
 We plan to expand Slugger Sensei’s capabilities by incorporating pitch recognition analysis, allowing batters to train against different pitch types. Additionally, we aim to develop a mobile app for on-the-go swing analysis and integrate real-time feedback via AR overlays. Beyond baseball, we see potential in applying this technology to other sports that rely on biomechanics, such as golf and tennis.
 
 Slugger Sensei is just getting started—our goal is to revolutionize sports training with AI-powered coaching for everyone!
+
+Test it out here:
+https://virtual-baseball-coach-ui-159395849557.us-central1.run.app/baseball-ai
+
+
