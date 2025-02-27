@@ -1,4 +1,4 @@
-# SlugSeiAI
+# SlugSei
 
 ## Inspiration
 
