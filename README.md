@@ -47,7 +47,7 @@ Beyond detection, we analyze MLB player data to provide useful comparisons. Sinc
 
 ![stat-analysis](frontend/src/assets/stat-analysis.webp)
 
-Read this article for further analysis
+Read this [article](https://snl-snl.vercel.app/?item=tracking-the-flight-of-a-baseball-detection-and-trajectory-analysis) written by our team member [Stephanie](https://github.com/StephanieNhiLe) for further analysis
 
 ## Challenges  
 
@@ -70,4 +70,9 @@ We plan to expand Slugsei’s capabilities by incorporating pitch recognition an
 Test it out here:
 https://virtual-baseball-coach-ui-159395849557.us-central1.run.app
 
+## Team Member
+- [Stephanie Nhi Le](https://github.com/StephanieNhiLe)
+- [Michael Le](https://github.com/LastSpot)
+- [Timothy Faniran](https://github.com/timfaniran)
+- [Divya Lakshmi](https://github.com/Divyatech-hub)
 
